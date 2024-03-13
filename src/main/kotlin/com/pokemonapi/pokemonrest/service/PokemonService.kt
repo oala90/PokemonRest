@@ -6,6 +6,7 @@ import com.pokemonapi.pokemonrest.entity.PokemonEntity
 interface PokemonService {
     fun savePokemon(pokemonDTO: PokemonDTO)
     fun getAllPokemon(): List<PokemonEntity>
+    fun getPokemonById(id: Int): PokemonEntity?
     fun deletePokemon(id: Int)
-    fun updatePokemon(id: Int, newPokemonName: String)
+    fun updatePokemon(id: Int, obj: PokemonDTO)
 }

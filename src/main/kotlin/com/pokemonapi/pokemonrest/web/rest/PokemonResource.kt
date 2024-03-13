@@ -18,11 +18,14 @@ class PokemonResource(
     @GetMapping
     fun getAllPokemon() = pokemonService.getAllPokemon()
 
+    @GetMapping("/{id}/")
+    fun getPokemonById(@PathVariable id: Int) = pokemonService.getPokemonById(id)
+
     @DeleteMapping("/{id}/")
     fun deletePokemon(@PathVariable id: Int) { pokemonService.deletePokemon(id) }
 
     @PutMapping("/{id}/")
-    fun updatePokemon(@PathVariable id: Int, @RequestParam name: String) {
-        pokemonService.updatePokemon(id, name)
+    fun updatePokemon(@PathVariable id: Int, @RequestBody obj: PokemonDTO) {
+        pokemonService.updatePokemon(id, obj)
     }
 }

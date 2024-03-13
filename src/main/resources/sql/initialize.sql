@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS pokemon_entity (
+    id INT PRIMARY KEY NOT NULL UNIQUE,
+    name VARCHAR(255) NOT NULL
+);
