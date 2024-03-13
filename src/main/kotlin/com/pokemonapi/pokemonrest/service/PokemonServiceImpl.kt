@@ -4,7 +4,6 @@ import com.pokemonapi.pokemonrest.dto.PokemonDTO
 import com.pokemonapi.pokemonrest.entity.PokemonEntity
 import com.pokemonapi.pokemonrest.mapper.toEntity
 import com.pokemonapi.pokemonrest.repository.PokemonRepository
-import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Service
 
 
