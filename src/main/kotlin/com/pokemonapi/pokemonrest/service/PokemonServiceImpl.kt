@@ -23,11 +23,6 @@ class PokemonServiceImpl(
 
     override fun getPokemonById(id: Int): PokemonEntity? {
         return pokemonRepository.getReferenceById(id)
-
-//        if (id != null) {
-//            return pokemonRepository.getReferenceById(id)
-//        }
-//        return null
     }
 
     override fun deletePokemon(id: Int) {
